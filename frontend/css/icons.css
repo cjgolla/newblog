@@ -1,0 +1,69 @@
+#js-icon{
+    background-image: url("/media/JavaScript-logo.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#react-icon {
+    background-image: url("/media/react.png");
+    background-size: contain;
+    background-repeat:no-repeat;
+    background-position: center;
+ 
+}
+
+#html-icon {
+    background-image: url("/media/html.webp");
+    background-size: contain;
+    background-repeat:no-repeat;
+    background-position: center;
+ 
+}
+
+#node-icon {
+    background-image: url("/media/node.png");
+    background-size: contain;
+    background-repeat:no-repeat;
+    background-position: center;
+ 
+}
+
+#mysql-icon {
+    background-image: url("/media/mysql.webp");
+    background-size: contain;
+    background-repeat:no-repeat;
+    background-position: center;
+ 
+}
+
+#mongo-icon {
+    background-image: url("/media/mongo.svg");
+    background-size: contain;
+    background-repeat:no-repeat;
+    background-position: center;
+ 
+}
+
+#docker-icon {
+    background-image: url("/media/docker.webp");
+    background-size: contain;
+    background-repeat:no-repeat;
+    background-position: center;
+ 
+}
+
+#ubuntu-icon {
+    background-image: url("/media/ubuntu.png");
+    background-size: contain;
+    background-repeat:no-repeat;
+    background-position: center;
+ 
+}
+
+#arch-icon {
+    background-image: url("/media/arch.png");
+    background-size: contain;
+    background-repeat:no-repeat;
+    background-position: center;
+ 
+}

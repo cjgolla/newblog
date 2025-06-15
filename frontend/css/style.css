@@ -1,0 +1,130 @@
+:root {
+    --black: #000000;
+    --darkb1: #040508;
+    --darkb2: #1a2444;
+    --darkb3: #162955;
+
+    --white: #ffffff;
+    --lightb1: rgb(176, 208, 235);
+    --lightb2: rgb(125, 161, 214);
+
+    --yellow1: #ffd28a; 
+    --yellow2: #fecf4e; 
+    --yellow3: #ffd321; 
+
+    --orange1: #ffa05c; 
+    --orange2: #ff992d; 
+    --orange3: #ff8800; 
+}
+
+*{
+    font-size: 30px;
+}
+
+a{
+    text-decoration: none;
+    color: var(--darkb3);
+    font-size: 16px;
+}
+ul{
+    margin:0px;
+}
+
+footer{
+    height:400px;
+}
+
+html{
+    scroll-snap-type: y mandatory;
+    
+}
+h1{
+    font-size: 200px;
+}
+
+body {
+    transition:all .5s;
+    position: relative;
+    margin: 0px;
+    background-color: var(--white);
+    color: var(--darkb2);
+    font-family: "Inter", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size:18px;
+}
+li{
+    list-style: none;
+    margin: 0px 20px 0px 10px;
+    color: var(--darkb3);
+    font-size: 16px;
+}
+
+#nav-list {
+    display: flex;
+    align-items: center;
+    
+}
+
+.cursor-area{
+    width:60px;
+    height:60px;
+}
+
+.selected {
+    padding: 10px;
+    background-color: var(--white);
+    border-radius: 10px;
+}
+nav{
+    height:50px;
+    background-color: #ffd28a;
+    position: sticky;
+    top: 0px;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: #3f3e47 1px 10px 20px;
+    display: flex;
+    align-items: center;
+}
+
+section{
+    height:90vh;
+    scroll-snap-align: start;
+    scroll-behavior: smooth;
+    width:900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+p{
+    text-indent: 30px;
+    line-height:1.5;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid-item{
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+}
+
+#grid{
+    transition:all .5s;
+    display: grid;
+    width: auto;
+    gap: 30px;
+    border-radius: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    padding:10px;
+}
+
+.button-unstyled{
+    cursor: pointer;
+    background-color: hwb(0 0% 100% / 0);
+    border: none;
+}
