@@ -2,6 +2,7 @@ const darkModeBtn = document.getElementById('darkmode-btn')
 document.body.style.backgroundColor = "white"
 document.body.style.color = 'var(--black)';
 const navbody = document.getElementById("nav")
+const hoverTag = document.getElementById("hover-to-reveal")
 
 const listItems = document.querySelectorAll("li, a, i")
 
@@ -65,6 +66,7 @@ darkModeBtn.addEventListener("click", (e)=> {
     
     if(document.body.style.backgroundColor === "black"){
         document.body.style.backgroundColor = "white";
+        hoverTag.style.opactiy = 0;
         document.body.style.color = 'var(--darkb1)'
         navbody.style.backgroundColor = 'var(--lightb2)';
         listItems.forEach(item=> {
@@ -74,6 +76,8 @@ darkModeBtn.addEventListener("click", (e)=> {
         
         
     } else {
+        
+        hoverTag.setAttribute('style', 'opactiy: 1');
        document.body.style.backgroundColor = "black";
        navbody.style.backgroundColor = 'black';
        navbody.style.color = "var(--lightb2)"

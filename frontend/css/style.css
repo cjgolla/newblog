@@ -88,7 +88,7 @@ li{
     background-color: var(--white);
     border-radius: 10px;
 }
-nav{
+#nav{
     z-index: 4;
     height:50px;
     background-color: #ffd28a;
@@ -102,9 +102,9 @@ nav{
 
 section{
     z-index: 3;
-
+/* 
     scroll-snap-align: start;
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; */
     width:900px;
     display: flex;
     flex-direction: column;
@@ -127,6 +127,8 @@ main{
 }
 
 #grid{
+    opacity: 0;
+    margin-top:30px;
     transition:all .5s;
     display: grid;
     width: auto;
@@ -134,6 +136,44 @@ main{
     border-radius: 10px;
     grid-template-columns: repeat(3, 1fr);
     padding:10px;
+}
+
+/* #nav-grid{
+    position: relative;
+    height:180px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(4, 200px);
+    gap:30px;
+    align-items: center;
+}
+ */
+
+ #nav-grid{
+    transition: all .5s;
+    position: relative;
+    
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(2, 200px);
+    grid-template-rows:200px 200px;
+    gap:30px;
+    align-items: center;
+}
+
+.nav-grid-icon{
+    transition: all .5s;
+    width: 150px;
+    height: 150px;
+    background-color: #ffa05c;
+    border-radius: 15px;
+     justify-self: center;
+}
+.nav-grid-icon:hover{
+    width:170px;
+    height: 170px;
 }
 
 .button-unstyled{

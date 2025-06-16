@@ -34,25 +34,41 @@
     <hr/>
     <main>
         <section id="section-main">
-            <h1 style="text-align: center; margin-top: 200px; font-size:100px;" >Casey's Website</h1>
-           <!--  <i>Preamble</i>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora nemo exercitationem natus praesentium, voluptatem earum numquam. Iure eos est non voluptatem nulla, soluta maiores adipisci expedita natus id distinctio inventore?</p> -->
-        </section> 
-        <section>
-      
-         <p>Hover over to reveal</p>
-        <div id="grid">
-            <div class="grid-item" id="js-icon"></div>
-            <div class="grid-item" id="react-icon"></div>
-            <div class="grid-item" id="html-icon"></div>
-            <div class="grid-item" id="node-icon"></div>
-            <div class="grid-item" id="mysql-icon"></div>
-            <div class="grid-item" id="mongo-icon"></div>
-            <div class="grid-item" id="docker-icon"></div>
-            <div class="grid-item" id="ubuntu-icon"></div>
-            <div class="grid-item" id="arch-icon"></div>
-        </div>
+            <h1 style="text-align: center; margin-top: 200px; font-size:100px;" >Welcome</h1>
         </section>
+        <nav>
+            <div id="nav-grid">
+                <div id="about-me-icon" class="nav-grid-icon"
+                style="display: flex; justify-content: center; align-items: center;"><i style="font-size: 100px; color: white;" class="ri-user-line"></i></div>
+                <div id="skillset-icon" class="nav-grid-icon"></div>
+                <div class="nav-grid-icon"></div>
+                <div class="nav-grid-icon"></div>
+            </div>
+        </nav> 
+
+        <section id="section-slides" style="flex-direction: row; position: relative; margin-top: 300px;">
+            <div id="skillset-slide" class="slide" style="display: flex; flex-direction: column; align-items: center;">
+                <h3>Skillset</h3>
+                <p id="hover-to-reveal">Hover over to reveal</p>
+                <div id="grid">
+                    <div class="grid-item" id="js-icon"></div>
+                    <div class="grid-item" id="react-icon"></div>
+                    <div class="grid-item" id="html-icon"></div>
+                    <div class="grid-item" id="node-icon"></div>
+                    <div class="grid-item" id="mysql-icon"></div>
+                    <div class="grid-item" id="mongo-icon"></div>
+                    <div class="grid-item" id="docker-icon"></div>
+                    <div class="grid-item" id="ubuntu-icon"></div>
+                    <div class="grid-item" id="arch-icon"></div>
+                </div>
+            </div>
+
+            <div id="about-me" class="slide"> 
+                <h3>About Me</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem nulla aspernatur numquam ea delectus saepe dolor a molestias harum fuga inventore nisi odio nesciunt provident, libero dolorum veritatis consectetur! Architecto.</p>
+            </div>
+        </section>
+        
         
     </main>
     <script src="index.js"></script>
