@@ -39,6 +39,7 @@ html{
     
 }
 h1{
+
     font-size: 200px;
 }
 
@@ -47,12 +48,22 @@ body {
     position: relative;
     margin: 0px;
     background-color: var(--white);
-    color: var(--darkb2);
+
+    
+    
+
     font-family: "Inter", sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
     font-size:18px;
+}
+
+#background-img{
+    position: absolute;
+    width: 100%;
+    filter: brightness(50%)
+    
 }
 li{
     list-style: none;
@@ -78,6 +89,7 @@ li{
     border-radius: 10px;
 }
 nav{
+    z-index: 4;
     height:50px;
     background-color: #ffd28a;
     position: sticky;
@@ -89,7 +101,8 @@ nav{
 }
 
 section{
-    height:90vh;
+    z-index: 3;
+
     scroll-snap-align: start;
     scroll-behavior: smooth;
     width:900px;

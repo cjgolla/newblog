@@ -1,6 +1,6 @@
 const darkModeBtn = document.getElementById('darkmode-btn')
 document.body.style.backgroundColor = "white"
-document.body.style.color = 'var(--darkb2)';
+document.body.style.color = 'var(--black)';
 const navbody = document.getElementById("nav")
 
 const listItems = document.querySelectorAll("li, a, i")
