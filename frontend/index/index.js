@@ -4,8 +4,13 @@ const gridIcons = document.querySelectorAll('.nav-grid-icon')
 const aboutMeSlide = document.getElementById("about-me-slide")
 const blogLatest = document.getElementById("blog-latest-icon")
 const slides = document.querySelectorAll('.slide')
+const main = document.getElementById("main")
 
 const iconHandlers = new Map();
+
+function flexChange(){
+    main.setAttribute("style", "margin-top: 50px;")
+}
 
 function appears(exception){
     console.log(slides)
@@ -64,6 +69,7 @@ function gridChange(){
 }
 
 function shrinkIcons(){
+    flexChange()
         gridIcons.forEach(i=>{
             
             i.classList.add('nav-grid-icon-small')

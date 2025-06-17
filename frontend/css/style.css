@@ -26,6 +26,12 @@ a{
     color: var(--darkb3);
     font-size: 16px;
 }
+
+main{
+ 
+    justify-self: center;
+    margin-top: 25vh;
+}
 ul{
     margin:0px;
 }
@@ -54,14 +60,13 @@ body {
     position: relative;
     margin: 0px;
     background-color: var(--white);
-
     
-    
-
+    height: 100vh;
     font-family: "Inter", sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
+
     font-size:18px;
 }
 
@@ -154,8 +159,8 @@ main{
     display: grid;
     justify-content: center;
     align-items: center;
-    grid-template-columns: repeat(2, 200px);
-    grid-template-rows:200px 200px;
+    grid-template-columns: repeat(4, 170px);
+    grid-template-rows:200px;
     gap:30px;
     align-items: center;
 }
