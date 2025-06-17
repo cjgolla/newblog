@@ -16,8 +16,8 @@
     
 }
 
-#about-me{
-    
+#about-me-slide{
+    width: 500px;
     transition: all .5s;
     opacity: 0;
     background-color: aliceblue;
@@ -25,12 +25,27 @@
     border-radius: 15px;
     padding:20px;
 }
+#blog-latest{
+    width:500px;
+    overflow: scroll;
+    height:500px;
+    opacity: 0;
+    padding:20px;
+    background-color: aliceblue;
+    outline: solid gray 3px;
+    border-radius: 15px;
+    
+}
+
+#contact-form > input, textarea{
+    display: block;
+    border-radius: 10px;
+}
 
 #section-slides{
     margin-top:20px;
     display: flex;
     justify-content: center;
-    align-items: center;
     width: 100%;
     height:500px;
     z-index: 2;
@@ -43,7 +58,16 @@
 
 }
 
+#skillset-title{
+    margin-left:40px;
+    margin-top: 20px;
+}
+
 #skillset-slide{
+    padding:10px;
+    border-radius: 15px;
+    background-color: #ecf9ffcf;
+    outline:solid gray 3px;
     opacity: 0;
     display: flex;
     flex-direction: column;
@@ -64,4 +88,8 @@
     background-color: rgb(166, 173, 238);
     background-size: cover;
     opacity: .8;
+}
+
+#contact-slide{
+    opacity: 0;
 }

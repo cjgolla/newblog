@@ -141,8 +141,6 @@ main{
     width: 500px;
     transition:all .5s;
     display: grid;
-    background-color: #ffffff23;
-    outline:solid gray 5px;
     gap: 30px;
     border-radius: 10px;
     grid-template-columns: repeat(3, 1fr);
@@ -166,10 +164,10 @@ main{
     transition: all .5s;
     width: 150px;
     height: 150px;
-    background-color: #ffca6f;
+    
     border-radius: 15px;
      justify-self: center;
-     outline: solid black 2px;
+ 
      padding:5px;
 }
 .nav-grid-icon:hover{

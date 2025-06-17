@@ -1,7 +1,8 @@
 
 const navGrid = document.getElementById("nav-grid")
 const gridIcons = document.querySelectorAll('.nav-grid-icon')
-const aboutMeSlide = document.getElementById("about-me")
+const aboutMeSlide = document.getElementById("about-me-slide")
+const blogLatest = document.getElementById("blog-latest-icon")
 const slides = document.querySelectorAll('.slide')
 
 const iconHandlers = new Map();
@@ -11,10 +12,12 @@ function appears(exception){
     slides.forEach(slide=>{
         if(slide.id === exception) {
             slide.setAttribute('style', 'transition: all .5s; display: flex;flex-direction: column; opacity: 1; margin-right: 0px')
+            console.log(slide.id)
         } else {
-            slide.setAttribute('style', 'transition: all .5s; opacity: 0;margin-left: 700px;')
+
+            slide.setAttribute('style', 'transition: all .5s;margin-left: 700px;')
             setTimeout(()=>{
-                slide.setAttribute('style', 'margin-right: 1400px; opacity: 0');
+                slide.setAttribute('style', 'margin-right: 1400px;');
             }, 500)
             
         }
@@ -31,8 +34,13 @@ function aaEventListener(icon) {
     } else if(icon.id === "about-me-icon"){
         gridChange()
         shrinkIcons()
-        appears('about-me')
+        appears('about-me-slide')
         aboutMeSlide.setAttribute('style', 'opacity: 1; margin-top: 0px;')
+        rEventListener()
+    } else if (icon.id === "blog-latest-icon"){
+        gridChange()
+        shrinkIcons()
+        appears('blog-latest')
         rEventListener()
     }
 }
