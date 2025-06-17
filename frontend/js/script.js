@@ -36,13 +36,13 @@ function disappear() {
             setTimeout(()=> {
                 grid.style.opacity = 1;
                 grid.classList.add("mask")
-                 document.addEventListener('mousemove', (e) => {
-                const rect = grid.getBoundingClientRect();
-                const x = e.clientX - rect.left;
-                const y = e.clientY - rect.top;
+                document.addEventListener('mousemove', (e) => {
+                    const rect = grid.getBoundingClientRect();
+                    const x = e.clientX - rect.left;
+                    const y = e.clientY - rect.top;
 
-                grid.style.setProperty('--x', `${x}px`)
-                grid.style.setProperty('--y', `${y}px`)
+                    grid.style.setProperty('--x', `${x}px`)
+                    grid.style.setProperty('--y', `${y}px`)
             })
             }, 500)
 }
