@@ -31,7 +31,7 @@ ul{
 }
 
 footer{
-    height:400px;
+    height:40px;
 }
 
 html{
@@ -44,6 +44,9 @@ h1{
         text-shadow: -4px -4px 0 #000, 1px -4px 0 #000, -1px 1px 0 #000, 4px 1px 0 #000;
     font-family: "Concert One", sans-serif;
     font-size: 200px;
+}
+h3{
+    margin: 0;
 }
 
 body {
@@ -109,17 +112,17 @@ section{
 /* 
     scroll-snap-align: start;
     scroll-behavior: smooth; */
-    width:900px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
+
 }
 p{
     text-indent: 30px;
     line-height:1.5;
+    font-size: 20px;
 }
 main{
     display: flex;
+    width:100%;
     flex-direction: column;
     align-items: center;
 }
@@ -128,24 +131,28 @@ main{
     width: 100px;
     height: 100px;
     border-radius: 5px;
+    justify-self: center;
 }
 
 #grid{
+    
     opacity: 0;
     margin-top:30px;
+    width: 500px;
     transition:all .5s;
     display: grid;
-    width: auto;
+    background-color: #ffffff23;
+    outline:solid gray 5px;
     gap: 30px;
     border-radius: 10px;
     grid-template-columns: repeat(3, 1fr);
-    padding:10px;
+    padding:30px;
 }
 
  #nav-grid{
     transition: all .5s;
     position: relative;
-    
+    z-index: 5;
     display: grid;
     justify-content: center;
     align-items: center;
@@ -168,6 +175,16 @@ main{
 .nav-grid-icon:hover{
     width:170px;
     height: 170px;
+}
+
+.nav-grid-icon-small{
+    width:130px;
+    height:130px;
+}
+
+.nav-grid-icon-small:hover{
+    width:140px;
+    height:140px;
 }
 
 .button-unstyled{

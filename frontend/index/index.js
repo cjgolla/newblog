@@ -46,12 +46,13 @@ function aEventListener(icon) {
 
 function gridChange(){
         grid.setAttribute('style', 'opacity: 1; margin-top: 0px;')
-        navGrid.setAttribute('style', 'grid-template-columns: repeat(4, 150px); grid-template-rows: 150px; gap: 10px;')
+        navGrid.setAttribute('style', 'grid-template-columns: repeat(4, 170px); grid-template-rows: 170px; gap: 10px;')
 }
 
 function shrinkIcons(){
         gridIcons.forEach(i=>{
-            i.setAttribute('style', 'width:120px;height:120px;')
+            
+            i.classList.add('nav-grid-icon-small')
         })
     }
 

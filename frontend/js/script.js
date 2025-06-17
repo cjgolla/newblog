@@ -2,7 +2,7 @@ const darkModeBtn = document.getElementById('darkmode-btn')
 document.body.style.backgroundColor = "white"
 document.body.style.color = 'var(--black)';
 const navbody = document.getElementById("nav")
-const hoverTag = document.getElementById("hover-to-reveal")
+
 
 const listItems = document.querySelectorAll("li, a, i")
 
@@ -34,7 +34,7 @@ document.body.addEventListener("change", (e)=>{
 })
 
 function disappear() {
-    skillsetSlide.style.opacity = 0;
+
     grid.style.opacity = 0;
            
             setTimeout(()=> {
@@ -59,11 +59,9 @@ function appear(){
     grid.style.transition = 'all .5s'
     grid.style.opacity = 1;
     skillsetSlide.style.opactiy = 1;
-    
     grid.classList.remove("mask")
-    document.removeEventListener('mousemove')
+  
 }
-
 
 
 darkModeBtn.addEventListener("click", (e)=> {
@@ -71,18 +69,15 @@ darkModeBtn.addEventListener("click", (e)=> {
     
     if(document.body.style.backgroundColor === "black"){
         document.body.style.backgroundColor = "white";
-        hoverTag.style.opactiy = 0;
         document.body.style.color = 'var(--darkb1)'
-        navbody.style.backgroundColor = 'var(--lightb2)';
+        navbody.style.backgroundColor = 'var(--white)';
         listItems.forEach(item=> {
             item.style.color = "var(--darkb1)"
         })
         appear();
         
-        
     } else {
-        
-        hoverTag.setAttribute('style', 'opactiy: 1');
+
        document.body.style.backgroundColor = "black";
        navbody.style.backgroundColor = 'black';
        navbody.style.color = "var(--lightb2)"
@@ -91,6 +86,5 @@ darkModeBtn.addEventListener("click", (e)=> {
             item.style.color = "var(--lightb1)"
         })
         disappear()
-        
     }
 })
