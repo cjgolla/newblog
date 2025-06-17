@@ -7,6 +7,9 @@ const hoverTag = document.getElementById("hover-to-reveal")
 const listItems = document.querySelectorAll("li, a, i")
 
 /* Script for Grid */
+
+const skillsetSlide = document.getElementById("skillset-slide")
+
 const grid = document.getElementById("grid")
 const rect = grid.getBoundingClientRect();
 
@@ -31,6 +34,7 @@ document.body.addEventListener("change", (e)=>{
 })
 
 function disappear() {
+    skillsetSlide.style.opacity = 0;
     grid.style.opacity = 0;
            
             setTimeout(()=> {
@@ -51,9 +55,10 @@ function appear(){
     
     grid.style.transition = 'all 0s'
     grid.style.opacity = 0;
+    skillsetSlide.style.opactiy = 0;
     grid.style.transition = 'all .5s'
     grid.style.opacity = 1;
-
+    skillsetSlide.style.opactiy = 1;
     
     grid.classList.remove("mask")
     document.removeEventListener('mousemove')

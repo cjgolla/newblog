@@ -35,3 +35,13 @@
     transition: all .5s;
     position: absolute;
 }
+#skillset-slide{
+    opacity: 0;
+    transition: all .5s;
+}
+#skillset-icon{
+    display: flex;
+   
+    align-items: center;
+}
+

@@ -39,7 +39,10 @@ html{
     
 }
 h1{
-
+      color: rgb(219, 248, 254);
+      
+        text-shadow: -4px -4px 0 #000, 1px -4px 0 #000, -1px 1px 0 #000, 4px 1px 0 #000;
+    font-family: "Concert One", sans-serif;
     font-size: 200px;
 }
 
@@ -91,11 +94,12 @@ li{
 #nav{
     z-index: 4;
     height:50px;
-    background-color: #ffd28a;
+    background-color: hsl(0, 0%, 100%);
+    outline: solid var(--darkb2) 2px;
     position: sticky;
     top: 0px;
     border-radius: 0px 0px 10px 10px;
-    box-shadow: #3f3e47 1px 10px 20px;
+
     display: flex;
     align-items: center;
 }
@@ -155,9 +159,11 @@ main{
     transition: all .5s;
     width: 150px;
     height: 150px;
-    background-color: #ffa05c;
+    background-color: #ffca6f;
     border-radius: 15px;
      justify-self: center;
+     outline: solid black 2px;
+     padding:5px;
 }
 .nav-grid-icon:hover{
     width:170px;
