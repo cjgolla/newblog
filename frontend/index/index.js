@@ -11,7 +11,7 @@ function appears(exception){
     console.log(slides)
     slides.forEach(slide=>{
         if(slide.id === exception) {
-            slide.setAttribute('style', 'transition: all .5s; display: flex;flex-direction: column; opacity: 1; margin-right: 0px')
+            slide.setAttribute('style', 'transition: all .5s; display: flex; opacity: 1; margin-right: 0px')
             console.log(slide.id)
         } else {
 
@@ -41,6 +41,12 @@ function aaEventListener(icon) {
         gridChange()
         shrinkIcons()
         appears('blog-latest')
+        rEventListener()
+    }
+    else if (icon.id === "contact-icon"){
+        gridChange()
+        shrinkIcons()
+        appears('contact-slide')
         rEventListener()
     }
 }
@@ -75,7 +81,7 @@ function rEventListener(){
             aEventListener(icon)
             console.log("Listeners applied")
         })
-    }, 550)
+    }, 600)
     
 }
 

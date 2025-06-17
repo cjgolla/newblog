@@ -38,10 +38,17 @@
         <nav>
             <div id="nav-grid">
                 <div id="about-me-icon" class="nav-grid-icon"
-                style="display: flex; justify-content: center; align-items: center;"><img src="../../media/svg/SVG/head.svg" ></div>
-                <div id="skillset-icon" class="nav-grid-icon"><img src="../../media/svg/SVG/toolbelt2.svg" ></div>
-                <div id="blog-latest-icon" class="nav-grid-icon"></div>
-                <div class="nav-grid-icon"></div>
+                style="display: flex; justify-content: center; align-items: center;">
+                    <img src="../../media/svg/SVG/head.svg"alt="about-me" ></div>
+                <div id="skillset-icon" class="nav-grid-icon">
+                    <img src="../../media/svg/SVG/toolbelt2.svg" alt="skillset"></div>
+                <div id="blog-latest-icon" class="nav-grid-icon">
+                    <img src="../../media/svg/SVG/blog.svg" alt="blog">
+                </div>
+                <div id="contact-icon" class="nav-grid-icon"
+                style="display: flex; justify-content: center; align-items: center;">
+                    <img src="../../media/svg/SVG/letter2.svg" alt="contact-me">
+                </div>
             </div>
         </nav> 
        
@@ -70,17 +77,29 @@
             </div>
             
             <div id="blog-latest" class="slide">
-                <h3>Latest Blog</h3>
-                <p id="paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem nulla aspernatur numquam ea delectus saepe dolor a molestias harum fuga inventore nisi odio nesciunt provident, libero dolorum veritatis consectetur! Architecto.</p>
-                <p id="paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem nulla aspernatur numquam ea delectus saepe dolor a molestias harum fuga inventore nisi odio nesciunt provident, libero dolorum veritatis consectetur! Architecto.</p>
-                <p id="paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem nulla aspernatur numquam ea delectus saepe dolor a molestias harum fuga inventore nisi odio nesciunt provident, libero dolorum veritatis consectetur! Architecto.</p>
-                <p id="paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem nulla aspernatur numquam ea delectus saepe dolor a molestias harum fuga inventore nisi odio nesciunt provident, libero dolorum veritatis consectetur! Architecto.</p>
+                <div id="blog-latest-section">
+                    <h3>Latest Blog</h3>
+                    <p id="paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem nulla aspernatur numquam ea delectus saepe dolor a molestias harum fuga inventore nisi odio nesciunt provident, libero dolorum veritatis consectetur! Architecto.</p>
+                    <p id="paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem nulla aspernatur numquam ea delectus saepe dolor a molestias harum fuga inventore nisi odio nesciunt provident, libero dolorum veritatis consectetur! Architecto.</p>
+                    <p id="paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem nulla aspernatur numquam ea delectus saepe dolor a molestias harum fuga inventore nisi odio nesciunt provident, libero dolorum veritatis consectetur! Architecto.</p>
+                    <p id="paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem nulla aspernatur numquam ea delectus saepe dolor a molestias harum fuga inventore nisi odio nesciunt provident, libero dolorum veritatis consectetur! Architecto.</p>
+                </div>
+                <aside id="blog-entries-aside">
+                    <p>Entries</p>
+                    <p class="entry-date">2025</p>
+                    <p class="entry-date">2026</p>
+                    <p class="entry-date">2027</p>
+                </aside>
             </div>
-            <div id="contact-slide">
-                <h3>Contact Me</h3>
+            <div id="contact-slide" class="slide">
+                
                 <form id="contact-form">
-                    <input type="text">
-                    <textarea></textarea>
+                    <h3>Contact Me</h3>
+                    <label for="email-input">Email</label>
+                    <input name="email-input" id="email-input" type="text">
+                    <label for="text-input">Message</label>
+                    <textarea id="text-input"></textarea>
+                    <button id="contact-submit-button">Submit</button>
                 </form>
             </div>
 

@@ -164,10 +164,8 @@ main{
     transition: all .5s;
     width: 150px;
     height: 150px;
-    
     border-radius: 15px;
      justify-self: center;
- 
      padding:5px;
 }
 .nav-grid-icon:hover{
