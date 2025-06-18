@@ -14,7 +14,7 @@ const blogEntries = document.getElementById("blog-entries-aside")
 const iconHandlers = new Map();
 
 function flexChange(){
-    main.setAttribute("style", "margin-bottom: 40px;")
+    
     welcomeTitle.classList.add("section-main-small")
     document.body.setAttribute("style", "justify-content: start")
 }

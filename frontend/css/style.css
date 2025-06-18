@@ -38,6 +38,7 @@ ul{
 
 main{
     justify-self: center;
+ 
    
 }
 
@@ -50,14 +51,18 @@ html{
     
 }
 h1{
-      color: rgb(219, 248, 254);
-      margin: 0px;
-        text-shadow: -4px -4px 0 #000, 1px -4px 0 #000, -1px 1px 0 #000, 4px 1px 0 #000;
+    color: rgb(219, 248, 254);
+    margin: 0px;
+    text-shadow: -4px -4px 0 #000, 1px -4px 0 #000, -1px 1px 0 #000, 4px 1px 0 #000;
     font-family: "Concert One", sans-serif;
     font-size: 100px;
 }
 h3{
-    margin: 0;
+    color: rgb(219, 248, 254);
+      margin: 0px;
+        text-shadow: -4px -4px 0 #000, 1px -4px 0 #000, -1px 1px 0 #000, 4px 1px 0 #000;
+    font-family: "Concert One", sans-serif;
+    font-size: 70px;
 }
 
 body {
@@ -73,6 +78,7 @@ body {
     align-items: center;
     justify-content: center;
     font-size:18px;
+    background-color: #e5f7ff;
 }
 
 #background-img{
@@ -122,8 +128,10 @@ section{
 /* 
     scroll-snap-align: start;
     scroll-behavior: smooth; */
+}
 
-
+#section-main{
+    margin-top: 30px;
 }
 p{
     text-indent: 30px;
@@ -154,7 +162,7 @@ main{
     gap: 30px;
     border-radius: 10px;
     grid-template-columns: repeat(3, 1fr);
-    padding:30px;
+    padding:20px;
 }
 
  #nav-grid{

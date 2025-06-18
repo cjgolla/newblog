@@ -1,11 +1,11 @@
 #js-icon{
-    background-image: url("/media/JavaScript-logo.png");
+    background-image: url("/media/svg/SVG/js.svg");
     background-size: cover;
     background-position: center;
 }
 
 #react-icon {
-    background-image: url("/media/react.png");
+    background-image: url("/media/svg/SVG/react.svg");
     background-size: contain;
     background-repeat:no-repeat;
     background-position: center;
@@ -13,7 +13,7 @@
 }
 
 #html-icon {
-    background-image: url("/media/html.webp");
+    background-image: url("/media/svg/SVG/html.svg");
     background-size: contain;
     background-repeat:no-repeat;
     background-position: center;
@@ -21,7 +21,7 @@
 }
 
 #node-icon {
-    background-image: url("/media/node.png");
+    background-image: url("/media/svg/SVG/node.svg");
     background-size: contain;
     background-repeat:no-repeat;
     background-position: center;
@@ -29,7 +29,7 @@
 }
 
 #mysql-icon {
-    background-image: url("/media/mysql.webp");
+    background-image: url("/media/svg/SVG/mtsql.svg");
     background-size: contain;
     background-repeat:no-repeat;
     background-position: center;
@@ -45,7 +45,7 @@
 }
 
 #docker-icon {
-    background-image: url("/media/docker.webp");
+    background-image: url("/media/svg/SVG/docker.svg");
     background-size: contain;
     background-repeat:no-repeat;
     background-position: center;
