@@ -6,6 +6,10 @@ const blogLatest = document.getElementById("blog-latest-icon")
 const slides = document.querySelectorAll('.slide')
 const main = document.getElementById("main")
 const welcomeTitle = document.getElementById("section-main")
+const closeIcon = document.getElementById("close-entries")
+const blogEntries = document.getElementById("blog-entries-aside")
+
+
 
 const iconHandlers = new Map();
 

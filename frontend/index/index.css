@@ -12,6 +12,7 @@
 
 #about-me p{
     display: flex;
+    font-size: 30px;
     width: 600px;
 }
 
@@ -21,7 +22,7 @@
 }
 
 #about-me-slide{
-    width: 500px;
+    width: 700px;
     transition: all .2s;
     opacity: 0;
     background-color: aliceblue;
@@ -34,9 +35,10 @@
 
     overflow: scroll;
     height:500px;
-    width:700px;
+    width:650px;
     opacity: 1;
     padding:20px;
+    padding-left:40px;
     background-color: aliceblue;
     outline: solid gray 3px;
     border-radius: 15px;
@@ -49,7 +51,7 @@
 }
 
 #section-slides{
-    margin-top:20px;
+
     display: flex;
     justify-content: center;
     width: 100%;
@@ -109,10 +111,6 @@
     padding: 10px;
 }
 
-#blog-latest-section > p{
-    width:400px;
-}
-
 #blog-latest{
     opacity: 0;
     display: flex;
@@ -122,20 +120,24 @@
 }
 
 #blog-entries-aside{
-
     display: flex;
     flex-direction: column;
     height: 20px;
     z-index: 9;
     padding:5px;
     width:200px;
-    margin-left:20px;
+    
     border-radius: 10px;
     
 }
 
+#entries-title{
+    text-indent: 0px;
+}
+
 #blog-archive-list{
-    border-radius: 15px;
+
+    border-radius: 10px;
     background-color: rgb(255, 177, 93);
     color: rgb(71, 44, 29);
 }
@@ -146,10 +148,11 @@
 }
 
 .entry-year > a {
-    background-color: rgba(240, 248, 255, 0);
+    background-color: rgba(216, 216, 216, 0);
 
     padding:10px;
     display: flex;
+    justify-content: space-between;
 }
 
 .entry-month{
@@ -177,48 +180,90 @@
     max-height: 1000px;
     transition: max-height .4s ease-in;
 }
+@media (max-width: 1000px){
+    #blog-latest{
+        width: 550px;
+    }
+    #nav-grid{
+        grid-template-columns: repeat(2, 200px);
+        grid-template-rows: 150px 150px;
+        gap:10px;
 
-@media (max-width: 600px) {
+    }
+    #grid{
+        width:400px;
+        gap: 10px;
+        padding:10px;
+    }
+    .grid-item{
+        width:100px;
+        height:100px;
+    }
+    #skillset-slide{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #skillset-title{
+        margin:0;
+    }
+}
+
+
+@media (max-width: 700px) {
+    #section-slides{
+        margin-top:50px;
+    }
+    #about-me-slide{
+        width: 420px;
+    }
     #blog-entries-aside{
+        display: none;
         position: absolute;
+        width: 100%;
+        margin: 0px;
         
+    }
+    #nav-grid{
+        grid-template-columns: repeat(2, 200px);
+        grid-template-rows: 150px 150px;
+        gap:10px;
+
     }
     #entries-title{
         display: none;
     }
     #blog-latest{
-        width:100vh;
+        padding-top:0px;
+        width:400px;
+        margin: 0px;
     }
     .nav-grid-icon-small{
-        width:120px;
-        height:120px;
+        width:150px;
+        height:150px;
     }
-    #nav-grid{
-        grid-template-columns: repeat(4, 100px);
-    }
+   
 }
-
 @media (max-width: 450px) {
     #nav-grid{
         grid-template-columns: repeat(2, 140px);
-        grid-template-rows: 100px;
+        grid-template-rows: 120px 120px;
         gap:10px;
+
     }
     .nav-grid-icon{
         width:120px;
         height:120px;
     }
-    .slide{
-        width:300px;
-    }
+
     #email-input{
-        width:280px;
+        width:250px;
     }
     h1{
         font-size: 80px;
     }
     #about-me-slide{
-        width: 280px;
+        width: 380px;
     }
     #grid{
         width:250px;
@@ -238,6 +283,34 @@
         margin:0;
     }
     #text-input{
-        width: 280px;
+        width: 250px;
+    }
+    #section-main{
+        height:120px;
+    }
+    #blog-latest{
+        padding:5px;
+        padding-top: 0px;
+        width:270px;
+    }
+    #about-me-slide{
+        width: 320px;
+        padding:5px;
+    }
+}
+
+@media (max-width: 350px){
+    .slide{
+        width:300px;
+    }
+    #nav-grid{
+        width:300px;
+    }
+    #about-me-slide{
+        width:260px;
+    }
+    #skillset-slide{
+        width:270px;
+        padding: 5px;
     }
 }
