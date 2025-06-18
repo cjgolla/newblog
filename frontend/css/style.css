@@ -27,13 +27,18 @@ a{
     font-size: 16px;
 }
 
-main{
- 
-    justify-self: center;
-    margin-top: 25vh;
+p{
+    margin: 0;
 }
+
 ul{
-    margin:0px;
+    margin: 0px;
+    padding: 0;
+}
+
+main{
+    justify-self: center;
+   
 }
 
 footer{
@@ -46,17 +51,17 @@ html{
 }
 h1{
       color: rgb(219, 248, 254);
-      
+      margin: 0px;
         text-shadow: -4px -4px 0 #000, 1px -4px 0 #000, -1px 1px 0 #000, 4px 1px 0 #000;
     font-family: "Concert One", sans-serif;
-    font-size: 200px;
+    font-size: 100px;
 }
 h3{
     margin: 0;
 }
 
 body {
-    transition:all .5s;
+    transition:all .2s;
     position: relative;
     margin: 0px;
     background-color: var(--white);
@@ -66,7 +71,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    justify-content: center;
     font-size:18px;
 }
 
@@ -77,8 +82,8 @@ body {
     
 }
 li{
+    width: 100%;
     list-style: none;
-    margin: 0px 20px 0px 10px;
     color: var(--darkb3);
     font-size: 16px;
 }
@@ -144,7 +149,7 @@ main{
     opacity: 0;
     margin-top:30px;
     width: 500px;
-    transition:all .5s;
+    transition:all .2s ease-out;
     display: grid;
     gap: 30px;
     border-radius: 10px;
@@ -153,7 +158,7 @@ main{
 }
 
  #nav-grid{
-    transition: all .5s;
+    transition: all .2s ease-out;
     position: relative;
     z-index: 5;
     display: grid;
@@ -165,8 +170,13 @@ main{
     align-items: center;
 }
 
+.nav-grid-small{
+    grid-template-columns: repeat(4, 90px);
+    grid-template-rows: 90px;
+}
+
 .nav-grid-icon{
-    transition: all .5s;
+    transition: all .2s ease-out;
     width: 150px;
     height: 150px;
     border-radius: 15px;

@@ -22,7 +22,7 @@
      <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <nav id="nav">
+   <!--  <nav id="nav">
         <ul id="nav-list">
             <li><a class="selected">Home</a></li>
             <li><a href="../blog/blog.html">Blog</a></li>
@@ -30,10 +30,10 @@
             <li>Socials</li>
             <li> <button id="darkmode-btn" class="button-unstyled"><i class="ri-moon-fill"></i></button></i></li>
         </ul>
-    </nav> 
+    </nav>  -->
     <main id="main">
         <section id="section-main">
-            <h1 style="text-align: center; margin-top: 20px; margin: 20px; font-size:100px;" >Welcome</h1>
+            <h1 >Welcome</h1>
         </section>
         <nav>
             <div id="nav-grid">
@@ -85,10 +85,57 @@
                     <p id="paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem nulla aspernatur numquam ea delectus saepe dolor a molestias harum fuga inventore nisi odio nesciunt provident, libero dolorum veritatis consectetur! Architecto.</p>
                 </div>
                 <aside id="blog-entries-aside">
-                    <p>Entries</p>
-                    <p class="entry-date">2025</p>
-                    <p class="entry-date">2026</p>
-                    <p class="entry-date">2027</p>
+                    <p id="entries-title">Entries</p>
+                    <ul id="blog-archive-list">
+
+                    <li class="entry-year"><a id="dropdown-2025" href="#">2025</a>
+                        <ul id="blog-sublist-2025" class="blog-sublist">
+                            <li class="entry-month">
+                                <a id="march-2025" href="#">March</a>
+                            </li>
+                            <li class="entry-month">
+                                <a id="april-2025" href="#">April</a>
+                            </li>
+                            <li class="entry-month">
+                                <a id="may-2025" href="#">May</a>
+                            </li>
+                            <li class="entry-month">
+                                <a id="june-2025" href="#">June</a>
+                            </li>
+                            <li class="entry-month">
+                                <a id="july-2025" href="#">July</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="dropdown-2026" class="entry-year">
+                        <a href="#">2025</a>
+                        <ul id="blog-sublist-2026" class="blog-sublist">
+                            <li class="entry-month">
+                                <a href="#">March</a>
+                            </li>
+                            <li class="entry-month">
+                                <a href="#">March</a>
+                            </li>
+                            <li class="entry-month">
+                                <a href="#">March</a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <li class="entry-year"><a href="#">2027</a>
+                        <ul class="blog-sublist">
+                            <li class="entry-month">
+                                <a href="#">March</a>
+                            </li>
+                            <li class="entry-month">
+                                <a href="#">March</a>
+                            </li>
+                            <li class="entry-month">
+                                <a href="#">March</a>
+                            </li>
+                        </ul>
+                    </li>
+                    </ul>
                 </aside>
             </div>
             <div id="contact-slide" class="slide">
@@ -109,6 +156,7 @@
     </main>
     <div id="backdrop"></div> 
     <script src="index.js"></script>
+    <script src="entries.js"></script>
     <script src="../js/script.js"></script>
 
 

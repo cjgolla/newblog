@@ -18,7 +18,7 @@ grid.scrollIntoView();
 document.body.addEventListener("change", (e)=>{
 
     if(document.body.style.backgroundColor === "black"){
-    console.log("YES")
+
     grid.classList.add("mask")
     document.addEventListener('mousemove', (e) => {
     const rect = grid.getBoundingClientRect();
